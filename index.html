@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualização de Dados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Visualização de Dados</h1>
+  </header>
+  <main>
+    <div id="chartContainer">
+      <!-- Gráfico será inserido aqui -->
+      <canvas id="myChart"></canvas>
+    </div>
+    <br><br><br><br> <br><BR></BR>
+    <div id="dateSelector">
+      <!-- Inputs de data serão inseridos aqui -->
+      <label for="startDate">Data de Início:</label>
+      <input type="date" id="startDate">
+      <label for="endDate">Data de Fim:</label>
+      <input type="date" id="endDate">
+      <button id="fetchDataButton">Obter Dados</button>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
